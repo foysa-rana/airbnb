@@ -1,0 +1,32 @@
+# General Node.js
+node_modules/
+dist/
+.env
+.DS_Store
+
+# Ignore for client
+client/.next/
+client/node_modules/
+client/.env
+client/.eslintcache
+client/package-lock.json
+
+# Ignore for server
+server/node_modules/
+server/dist/
+server/.env
+server/package-lock.json
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Ignore OS files
+Thumbs.db
+*.DS_Store
+
+# Ignore other unnecessary files
+*.swp
+.vscode/
+.idea/
