@@ -1,6 +1,6 @@
 # airbnb full satck project
 
-## Technoloies
+## Technologies
 Tailwind CSS, Next JS, Express JS, MongoDB
 
 # How to use it
