@@ -19,16 +19,7 @@ export interface Iactive {
   miniSearchBar: boolean;
 }
 
-interface IinitialState {
-  where: boolean;
-  checkIn: boolean;
-  checkOut: boolean;
-  who: boolean;
-  miniSearchBar: boolean;
-  adults: number;
-  children: number;
-  infants: number;
-  pets: number;
+export interface IinitialState extends Iactive, Iguests {
   startDate: Date | null;
   endDate: Date | null;
   location: string;
