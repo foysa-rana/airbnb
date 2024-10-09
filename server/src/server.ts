@@ -20,11 +20,13 @@ app.use("/api/v1/places", hostRouter);
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddlware);
 
+const port = process.env.PORT || 5000;
+
 const start = async () => {
   try {
     await dbConnect(process.env.MONGODB_ATLAS_URI || "");
-    app.listen(5000, () => {
-      console.log(`server listening at http://localhost:${5000}`);
+    app.listen(port, () => {
+      console.log(`server listening at http://localhost:${port}`);
     });
   } catch (error) {
     console.log(error);
